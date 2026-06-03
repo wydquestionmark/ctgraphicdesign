@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Graphic Design at OWTS</title>
+  <meta name="description" content="Graphic Design at OWTS student work gallery and program highlights." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#top">graphic design at owts</a>
+    <nav aria-label="Main navigation">
+      <a href="#top">home</a>
+      <a href="#student-work">student work</a>
+      <a href="#winners">skillsusa</a>
+      <a href="#contact">contact</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero section">
+      <div class="hero-copy">
+        <p class="eyebrow">Oliver Wolcott Technical High School</p>
+        <h1>creative work from graphic design students</h1>
+        <p>Below you will find student work from various projects. Click any image to expand it.</p>
+      </div>
+      <div class="category-grid" aria-label="Featured project categories">
+        <article class="category-card"><img src="student-work/placeholder-1.svg" alt="Various student work"><span>various student work</span></article>
+        <article class="category-card"><img src="student-work/placeholder-2.svg" alt="Student life"><span>student life</span></article>
+        <article class="category-card"><img src="student-work/placeholder-3.svg" alt="Skateboard design contest"><span>skateboard design contest</span></article>
+        <article class="category-card"><img src="student-work/placeholder-4.svg" alt="Three dimensional typography"><span>3D typography</span></article>
+        <article class="category-card"><img src="student-work/placeholder-5.svg" alt="Brand identity project"><span>brand identity</span></article>
+        <article class="category-card"><img src="student-work/placeholder-6.svg" alt="Senior capstone examples"><span>senior capstone</span></article>
+      </div>
+    </section>
+
+    <section id="student-work" class="section student-work-section">
+      <div class="section-heading">
+        <p class="eyebrow">gallery</p>
+        <h2>Student work</h2>
+        <p>Add images to the <code>student-work</code> folder in GitHub and they will be pulled into this grid.</p>
+      </div>
+      <div id="gallery" class="gallery" aria-live="polite"></div>
+      <p id="gallery-status" class="gallery-status">Loading student work…</p>
+    </section>
+
+    <section class="section quotes" aria-label="Student quotes">
+      <figure>
+        <blockquote>“I would have never found this career if not for OWTS, and now I can’t see myself doing anything else.”</blockquote>
+        <figcaption>Zoe O.</figcaption>
+      </figure>
+      <figure>
+        <blockquote>“I liked that graphics allowed me to be both creative and unique.”</blockquote>
+        <figcaption>Steven B.</figcaption>
+      </figure>
+      <figure>
+        <blockquote>“Graphic design gives me freedom and the ability to be creative however I want.”</blockquote>
+        <figcaption>Angel C.</figcaption>
+      </figure>
+    </section>
+
+    <section id="winners" class="section winners">
+      <div class="section-heading">
+        <p class="eyebrow">recognition</p>
+        <h2>SkillsUSA State Competition Winners</h2>
+      </div>
+      <div class="winner-list">
+        <p><strong>2016</strong> Anya Stephenson — T-Shirt Design — Gold</p>
+        <p><strong>2017</strong> Ema Hoskins — Pin Design — Gold; Steven Bechard — T-Shirt Design — Gold; Shaylin Bracken — T-Shirt Design — Silver</p>
+        <p><strong>2018</strong> Steven Bechard — T-Shirt Design — Gold</p>
+        <p><strong>2019</strong> Zoe Orie — Pin Design — Gold; Zoe Orie — T-Shirt Design — Gold</p>
+        <p><strong>2020</strong> Zoe Orie — Pin Design — Gold; Zoe Orie — T-Shirt Design — Gold</p>
+        <p><strong>2021</strong> Zoe Orie — Pin Design — Gold; Zoe Orie — T-Shirt Design — Silver</p>
+        <p><strong>2022</strong> Yanelis Vargas — Pin Design — Gold; Angeleah Castillo — T-Shirt Design — Bronze</p>
+        <p><strong>2024</strong> Hazel Palmer — T-Shirt Design — Silver</p>
+        <p><strong>2025</strong> Alexandra Beale — T-Shirt Design — Gold</p>
+      </div>
+    </section>
+  </main>
+
+  <footer id="contact" class="site-footer">
+    <h2>75 Oliver St. Torrington, CT</h2>
+    <p><a href="mailto:david.garcia@cttech.org">david.garcia@cttech.org</a> · <a href="tel:18604965300">860.496.5300</a></p>
+    <p><a href="https://www.instagram.com/owtsgraphics/">Follow us on Instagram</a></p>
+  </footer>
+
+  <dialog id="lightbox" class="lightbox" aria-label="Expanded image">
+    <button id="close-lightbox" class="close-button" aria-label="Close image">×</button>
+    <img id="lightbox-image" alt="Expanded student work" />
+    <p id="lightbox-caption"></p>
+  </dialog>
+
+  <script src="script.js"></script>
+</body>
+</html>
